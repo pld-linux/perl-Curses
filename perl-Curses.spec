@@ -10,7 +10,8 @@ Summary(pl):	Curses - obs³uga i optymalizacja ekranu terminala
 Name:		perl-Curses
 Version:	1.06
 Release:	5
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	569c7966f2e591676f7eb09e5b7a84c0
