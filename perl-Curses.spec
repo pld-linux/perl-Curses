@@ -16,7 +16,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	569c7966f2e591676f7eb09e5b7a84c0
 Patch0:		%{name}-sv_isa.patch
-BuildRequires:	ncurses-devel	
+BuildRequires:	ncurses-devel
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -34,7 +34,7 @@ Curses to interfejs miêdzy Perlem a systemow± bibliotek± curses(3).
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %{!?_without_tests:%{__make} test}
