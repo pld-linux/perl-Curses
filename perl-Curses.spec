@@ -9,11 +9,11 @@ Summary:	Curses perl module
 Summary(pl):	Modu³ perla Curses
 Name:		perl-Curses
 Version:	1.06
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	ncurses-devel	
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -28,7 +28,8 @@ Modu³ perla Curses.
 %setup -q -n %{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -36,7 +37,7 @@ Modu³ perla Curses.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{perl_sitelib}/Curses
+install -d $RPM_BUILD_ROOT%{perl_vendorlib}/Curses
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -44,9 +45,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitearch}/*.pm
-%dir %{perl_sitearch}/auto/Curses
-%dir %{perl_sitelib}/Curses
-%{perl_sitearch}/auto/Curses/Curses.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Curses/Curses.so
+%{perl_vendorarch}/*.pm
+%dir %{perl_vendorarch}/auto/Curses
+%dir %{perl_vendorlib}/Curses
+%{perl_vendorarch}/auto/Curses/Curses.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Curses/Curses.so
 %{_mandir}/man3/*
