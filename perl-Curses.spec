@@ -9,11 +9,11 @@ Summary:	Curses perl module
 Summary(pl):	Modu³ perla Curses
 Name:		perl-Curses
 Version:	1.06
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	ncurses-devel	
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
