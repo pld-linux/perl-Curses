@@ -14,7 +14,7 @@ BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Perl Curses modules
+Perl Curses modules.
 
 %description -l pl
 Modu³ perla Curses.
