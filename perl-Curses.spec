@@ -7,10 +7,10 @@
 %define	pdir	Curses
 %define	pnam	Curses
 Summary:	Curses - terminal screen handling and optimization
-Summary(pl):	Curses - obs³uguga i optymalizacja ekranu terminala
+Summary(pl):	Curses - obs³uga i optymalizacja ekranu terminala
 Name:		perl-Curses
 Version:	1.06
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
