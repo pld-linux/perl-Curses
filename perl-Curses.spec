@@ -3,7 +3,6 @@
 # _without_tests - do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Curses
 %define	pnam	Curses
 Summary:	Curses - terminal screen handling and optimization
@@ -17,7 +16,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
 # Source0-md5:	569c7966f2e591676f7eb09e5b7a84c0
 Patch0:		%{name}-sv_isa.patch
 BuildRequires:	ncurses-devel
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -35,13 +34,15 @@ Curses to interfejs miêdzy Perlem a systemow± bibliotek± curses(3).
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make}
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{perl_vendorlib}/Curses
+
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
