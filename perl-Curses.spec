@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	C-Scan perl module
-Summary(pl):	Modu³ perla C-Scan
+Summary:	Curses perl module
+Summary(pl):	Modu³ perla Curses
 Name:		perl-Curses
 Version:	1.06
 Release:	1
