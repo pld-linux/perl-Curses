@@ -14,6 +14,7 @@ Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
+# Source0-md5:	569c7966f2e591676f7eb09e5b7a84c0
 Patch0:		%{name}-sv_isa.patch
 BuildRequires:	ncurses-devel	
 BuildRequires:	perl-devel >= 5.6
