@@ -3,8 +3,8 @@
 %bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Curses
-%define	pnam	Curses
+%define		pdir	Curses
+%define		pnam	Curses
 Summary:	Curses - terminal screen handling and optimization
 Summary(pl):	Curses - obs³uga i optymalizacja ekranu terminala
 Name:		perl-Curses
