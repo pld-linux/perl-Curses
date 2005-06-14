@@ -8,13 +8,13 @@
 Summary:	Curses - terminal screen handling and optimization
 Summary(pl):	Curses - obs³uga i optymalizacja ekranu terminala
 Name:		perl-Curses
-Version:	1.08b
+Version:	1.12
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tgz
-# Source0-md5:	b468da1602da4399cd03f985672beb72
+# Source0-md5:	eb3d09fa74f562244e95677cb369575c
 BuildRequires:	ncurses-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -28,7 +28,7 @@ library.
 Curses to interfejs miêdzy Perlem a systemow± bibliotek± curses(3).
 
 %prep
-%setup -q -n %{pnam}-1.08
+%setup -q -n %{pnam}-%{version}
 
 %build
 %{__perl} Makefile.PL \
