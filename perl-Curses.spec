@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tgz
 # Source0-md5:	d446947a39025e1a61512fd99ff8ff25
+URL:		http://search.cpan.org/dist/Curses/
 BuildRequires:	ncurses-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -44,6 +45,8 @@ install -d $RPM_BUILD_ROOT%{perl_vendorlib}/Curses
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Curses/.packlist
 
 %clean
 rm -rf $RPM_BUILD_ROOT
