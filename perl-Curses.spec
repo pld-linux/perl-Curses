@@ -6,7 +6,7 @@
 %define		pdir	Curses
 %define		pnam	Curses
 Summary:	Curses - terminal screen handling and optimization
-Summary(pl):	Curses - obs³uga i optymalizacja ekranu terminala
+Summary(pl.UTF-8):   Curses - obsÅ‚uga i optymalizacja ekranu terminala
 Name:		perl-Curses
 Version:	1.14
 Release:	1
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 "Curses" is the interface between Perl and your system's curses(3)
 library.
 
-%description -l pl
-Curses to interfejs miêdzy Perlem a systemow± bibliotek± curses(3).
+%description -l pl.UTF-8
+Curses to interfejs miÄ™dzy Perlem a systemowÄ… bibliotekÄ… curses(3).
 
 %prep
 %setup -q -n %{pnam}-%{version}
