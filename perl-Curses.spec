@@ -6,7 +6,7 @@
 %define		pdir	Curses
 %define		pnam	Curses
 Summary:	Curses - terminal screen handling and optimization
-Summary(pl.UTF-8):   Curses - obsługa i optymalizacja ekranu terminala
+Summary(pl.UTF-8):	Curses - obsługa i optymalizacja ekranu terminala
 Name:		perl-Curses
 Version:	1.14
 Release:	1
