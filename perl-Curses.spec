@@ -8,13 +8,13 @@
 Summary:	Curses - terminal screen handling and optimization
 Summary(pl.UTF-8):	Curses - obsługa i optymalizacja ekranu terminala
 Name:		perl-Curses
-Version:	1.26
-Release:	2
+Version:	1.27
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tgz
-# Source0-md5:	b8c1b4e9f810e8188825eba868a6843e
+# Source0-md5:	f125ccc648141ff0be7b0743a73cf67e
 URL:		http://search.cpan.org/dist/Curses/
 BuildRequires:	ncurses-devel
 BuildRequires:	perl-devel >= 1:5.8.0
