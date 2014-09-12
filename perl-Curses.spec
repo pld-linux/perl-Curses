@@ -59,5 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorlib}/Curses
 %dir %{perl_vendorarch}/auto/Curses
 %attr(755,root,root) %{perl_vendorarch}/auto/Curses/Curses.so
-%{perl_vendorarch}/auto/Curses/Curses.bs
 %{_mandir}/man3/*
