@@ -9,7 +9,7 @@ Summary:	Curses - terminal screen handling and optimization
 Summary(pl.UTF-8):	Curses - obsługa i optymalizacja ekranu terminala
 Name:		perl-Curses
 Version:	1.36
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
